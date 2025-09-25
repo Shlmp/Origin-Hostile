@@ -14,11 +14,12 @@ public class BobSPA : MonoBehaviour
     public Transform[] patrolPoints = new Transform[4];
     public float fleeDistance = 4f;
     public float distanceCheck = 1f;
+    public float speed = 5f;
 
     private float distanceToPlayer;
     private bool LOS = false;
     private int patrolIndex = 0;
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     public TextMeshProUGUI fleeText;
     public TextMeshProUGUI chaseText;
@@ -134,7 +135,7 @@ public class BobSPA : MonoBehaviour
 
     private void Chase()
     {
-        agent.SetDestination(player.position);
+        agent.SetDestination(player.position * speed * Time.deltaTime);
     }
 
     private void Patrol()

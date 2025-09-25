@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class GrabEnemy : MonoBehaviour
@@ -27,8 +28,21 @@ public class GrabEnemy : MonoBehaviour
             Debug.Log("player.enemy = " + enemy);
             Debug.Log("this.transform = " + this.transform);
             enemy.transform.parent = this.transform;
-            enemy.transform.position = new Vector3(this.transform.position.x, 1, this.transform.position.z);
+            enemy.transform.position = new Vector3(this.transform.position.x, 10, this.transform.position.z);
             enemy.GetComponent<BobSPA>().enabled = false;
+            enemy.GetComponent <BobSPA>().speed = 0;
+            enemy.GetComponent<BobSPA>().agent.speed = 0;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.GetComponent<BobSPA>())
+        {
+            enemy = other.gameObject;
+            Debug.Log("enemy = " + enemy + "  --  other = " + other.gameObject);
+            Debug.Log("grabEnemy = " + other.name);
+            Interact();
         }
     }
 }

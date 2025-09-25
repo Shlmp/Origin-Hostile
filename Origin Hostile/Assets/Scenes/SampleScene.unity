@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffec931a57d1d594eb21306372e5cab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1468069261}
+  enemy: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,8 +397,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5424139, y: 0.0012606458, z: -0.0008047758, w: 0.84011006}
-  m_LocalPosition: {x: 1.2145717, y: 35.176586, z: -19.443413}
+  m_LocalRotation: {x: -0.49758315, y: 0.0005185186, z: -0.00029721903, w: -0.8674161}
+  m_LocalPosition: {x: 0.53660977, y: 32.005447, z: -22.86979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

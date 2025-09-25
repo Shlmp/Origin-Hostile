@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     private MyActions actions;
     public float speed = 1f;
 
-    private GrabEnemy grabEnemy;
     public GameObject enemy;
 
     private void Start()
@@ -16,9 +15,6 @@ public class PlayerMovement : MonoBehaviour
 
         actions = new MyActions();
         actions.Gameplay.Enable();
-
-        gameObject.TryGetComponent(out grabEnemy);
-        grabEnemy = gameObject.GetComponentInChildren<GrabEnemy>();
     }
 
     private void Update()
@@ -27,16 +23,5 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(new Vector3(input.x, 0, input.y) * Time.deltaTime * speed);
 
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.GetComponent<BobSPA>())
-        {
-            enemy = other.gameObject;
-            Debug.Log("enemy = " + enemy + "  --  other = " + other.gameObject);
-            Debug.Log("grabEnemy = " + grabEnemy);
-            grabEnemy.Interact();
-        }
     }
 }
