@@ -261,7 +261,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   fleeDistance: 4
-  distanceCheck: 1
+  distanceCheck: 2
   viewDistance: 10
   viewAngle: 45
   fleeText: {fileID: 0}

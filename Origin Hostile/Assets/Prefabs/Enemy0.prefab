@@ -122,7 +122,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -152,10 +152,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  fleeDistance: 4
+  fleeDistance: 6
   distanceCheck: 1
-  viewDistance: 10
-  viewAngle: 45
+  viewDistance: 5
+  viewAngle: 35
   fleeText: {fileID: 0}
   chaseText: {fileID: 0}
   criticalHealthLimit: 0.3
