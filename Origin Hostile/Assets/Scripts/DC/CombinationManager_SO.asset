@@ -17,3 +17,5 @@ MonoBehaviour:
     nextPrefab: {fileID: 9082412358207150366, guid: bee6f23908e443f4db1b52b3ad1fc2f6, type: 3}
   - stage: 1
     nextPrefab: {fileID: 3290421394726783428, guid: b7062eae3b554764292e742a567bd1fe, type: 3}
+  - stage: 2
+    nextPrefab: {fileID: 2507822023160458560, guid: c8edc4330e57a56408e773ab99ab4172, type: 3}
